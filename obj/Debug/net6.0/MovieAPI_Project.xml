@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieAPI_Project</name>
+    </assembly>
+    <members>
+        <member name="M:MovieAPI_Project.Controllers.CharactersController.GetCharacters">
+            <summary>
+            Gets all the characters
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.CharactersController.GetCharacter(System.Int32)">
+            <summary>
+            Gets a character with the given Id
+            </summary>
+            <param name="id">Character Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.CharactersController.AddCharacter(MovieAPI_Project.DTOs.CharacterDTO)">
+            <summary>
+            Adds a new character
+            </summary>
+            <param name="characterDTO">Character DTO</param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.CharactersController.UpdateCharacter(MovieAPI_Project.DTOs.CharacterDTO)">
+            <summary>
+            Updates an existing character
+            </summary>
+            <param name="characterDTO">Character DTO</param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.CharactersController.DeleteCharacter(System.Int32)">
+            <summary>
+            Deletes an existing character with the provided Id
+            </summary>
+            <param name="id">Character Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.GetFranchises">
+            <summary>
+            Gets all the franchises
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.GetFranchise(System.Int32)">
+            <summary>
+            Gets a franchise with given id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.AddFranchise(MovieAPI_Project.DTOs.FranchiseDTO)">
+            <summary>
+            Adds a new franchise
+            </summary>
+            <param name="franchiseDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.UpdateFranchise(MovieAPI_Project.DTOs.FranchiseDTO)">
+            <summary>
+            Updates a franchise
+            </summary>
+            <param name="franchiseDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.DeleteFranchise(System.Int32)">
+            <summary>
+            Deletes an existing franchise
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.UpdateFranchiseMovies(System.Int32,MovieAPI_Project.DTOs.UpdateMoviesDTO)">
+            <summary>
+            Updates a movie in a given franchise by id
+            </summary>
+            <param name="id"></param>
+            <param name="updateMoviesDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.GetFranchiseMovies(System.Int32)">
+            <summary>
+            Gets all the movies in a franchise
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.FranchiseController.GetFranchiseCharacters(System.Int32)">
+            <summary>
+            Gets all the characters in a franchise 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.MovieController.GetMovies">
+            <summary>
+            Gets all the movies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.MovieController.GetMovie(System.Int32)">
+            <summary>
+            Gets a movie with given id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.MovieController.AddMovie(MovieAPI_Project.DTOs.MovieDTO)">
+            <summary>
+            Adds a new movie
+            </summary>
+            <param name="movieDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.MovieController.UpdateMovie(MovieAPI_Project.DTOs.MovieDTO)">
+            <summary>
+            Updates an existing movie
+            </summary>
+            <param name="movieDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.MovieController.DeleteMovie(System.Int32)">
+            <summary>
+            Deletes a movie with given id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.Controllers.MovieController.GetMovieCharacters(System.Int32)">
+            <summary>
+            Gets all the characters in a movie with given id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetMovies">
+            <summary>
+            Returns all movies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetMovie(System.Int32)">
+            <summary>
+            Returns movie by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.AddMovie(MovieAPI_Project.Entity.Movie)">
+            <summary>
+            Adds a new movie
+            </summary>
+            <param name="movie"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.UpdateMovie(MovieAPI_Project.Entity.Movie)">
+            <summary>
+            Updates an existing movie 
+            </summary>
+            <param name="movie"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.DeleteMovie(System.Int32)">
+            <summary>
+            Deletes a movie by Id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetCharacters">
+            <summary>
+            Returns all the characters
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetCharacter(System.Int32)">
+            <summary>
+            Return a charcter by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.AddCharacter(MovieAPI_Project.Entity.Character)">
+            <summary>
+            Adds a new character in the list
+            </summary>
+            <param name="character"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.UpdateCharacter(MovieAPI_Project.Entity.Character)">
+            <summary>
+            Updates a character
+            </summary>
+            <param name="character"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.DeleteCharacter(System.Int32)">
+            <summary>
+            deletes a character from the list
+            </summary>
+            <param name="character"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetFranchises">
+            <summary>
+            Returns list of the franchises
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetFranchise(System.Int32)">
+            <summary>
+            Returns a franchise from the list by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.AddFranchise(MovieAPI_Project.Entity.Franchise)">
+            <summary>
+            Adds a Franchise in the list
+            </summary>
+            <param name="franchise"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.UpdateFranchise(MovieAPI_Project.Entity.Franchise)">
+            <summary>
+            Updates a franchise
+            </summary>
+            <param name="franchise"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.DeleteFranchise(System.Int32)">
+            <summary>
+            Deletes a franchise from the list
+            </summary>
+            <param name="franchise"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.UpdateMovieCharacters(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Updates movie with the characters
+            </summary>
+            <param name="movieId"></param>
+            <param name="characterIds"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.UpdateFranchiseMovies(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Updates franchise with the movies
+            </summary>
+            <param name="franchiseId"></param>
+            <param name="movieIds"></param>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetMovies(System.Int32)">
+            <summary>
+            Gets movies for the given franchise id
+            </summary>
+            <param name="franchiseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetFranchiseCharacters(System.Int32)">
+            <summary>
+            Gets all the characters in a franchise
+            </summary>
+            <param name="franchiseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.IDataRepository.GetMovieCharacters(System.Int32)">
+            <summary>
+            Gets all the characters in a movie
+            </summary>
+            <param name="movieId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.#ctor(MovieAPI_Project.MovieDbContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.AddCharacter(MovieAPI_Project.Entity.Character)">
+            <summary>
+            Adding a character in database.
+            </summary>
+            <param name="character"></param>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.AddFranchise(MovieAPI_Project.Entity.Franchise)">
+            <summary>
+            Adding a franchise in database.
+            </summary>
+            <param name="franchise"></param>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.AddMovie(MovieAPI_Project.Entity.Movie)">
+            <summary>
+            Adding a movie in database.
+            </summary>
+            <param name="movie"></param>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetCharacters">
+            <summary>
+            Gets all the characters from the database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.DeleteCharacter(System.Int32)">
+            <summary>
+            Deletes a character from the database by name
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.DeleteFranchise(System.Int32)">
+            <summary>
+            Deletes a franchise from the database by name
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.DeleteMovie(System.Int32)">
+            <summary>
+            Deletes a movie from the database by id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetCharacter(System.Int32)">
+            <summary>
+            Gets a character by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetFranchise(System.Int32)">
+            <summary>
+            Gets a franchise by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetFranchises">
+            <summary>
+            Gets list of franchises
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetMovie(System.Int32)">
+            <summary>
+            Gets a movie by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetMovies">
+            <summary>
+            Gets list of movies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.UpdateCharacter(MovieAPI_Project.Entity.Character)">
+            <summary>
+            Updates a character in the database 
+            </summary>
+            <param name="character"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.UpdateFranchise(MovieAPI_Project.Entity.Franchise)">
+            <summary>
+            Updates a franchise in the database
+            </summary>
+            <param name="franchise"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.UpdateMovie(MovieAPI_Project.Entity.Movie)">
+            <summary>
+            Updates a movie in the database
+            </summary>
+            <param name="movie"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.UpdateMovieCharacters(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Updates movie with the characters
+            </summary>
+            <param name="movieId"></param>
+            <param name="characterIds"></param>
+            <exception cref="T:MovieAPI_Project.Exceptions.NotFoundException"></exception>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.UpdateFranchiseMovies(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Updates franchise with the movies
+            </summary>
+            <param name="franchiseId"></param>
+            <param name="movieIds"></param>
+            <exception cref="T:MovieAPI_Project.Exceptions.NotFoundException"></exception>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetMovies(System.Int32)">
+            <summary>
+            Gets movies for the given franchise id
+            </summary>
+            <param name="franchiseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetMovieCharacters(System.Int32)">
+            <summary>
+            Gets all the characters in a franchise
+            </summary>
+            <param name="movieId"></param>
+            <returns></returns>
+            <exception cref="T:MovieAPI_Project.Exceptions.NotFoundException"></exception>
+        </member>
+        <member name="M:MovieAPI_Project.SqlDataRepository.GetFranchiseCharacters(System.Int32)">
+            <summary>
+            Gets all the characters in a movie
+            </summary>
+            <param name="franchiseId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
